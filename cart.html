@@ -47,17 +47,16 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
 
     <!--External CSS-->
-    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./logo.css" />
   </head>
 
-  <body
-    style="background-image: url('./img/bg-image.jpg'); background-size: cover">
+  <body>
     <header>
       <!-- place navbar here -->
       <!--Header-->
       <nav class="navbar navbar-expand-lg text-bg-success">
         <div class="container-fluid">
-          <a class="navbar-brand" href="index.html">
+          <a class="navbar-brand" href="#">
             <img class="img-fluid logosize" src="./img/logo.png" />
           </a>
           <button
@@ -126,7 +125,7 @@
             </ul>
             <form class="d-flex" role="search">
               <input
-                class="form-control me-2"
+                class="form-control"
                 type="search"
                 placeholder="Search"
                 aria-label="Search" />
@@ -146,65 +145,151 @@
         </div>
       </nav>
     </header>
-    <main>
-      <form>
-        <div
-          class="d-flex align-items-center justify-content-center"
-          style="color: white; height: 90vh">
-          <div class="container bg-dark bg-opacity-50 rounded p-5">
-            <div class="row justify-content-center align-items-center g-2">
-              <div class="col">
-                <div class="row justify-content-center align-items-center g-2">
-                  <div class="col"><h3 class="text-center">Log In</h3></div>
+    <main class="p-3">
+      <div class="row">
+        <!--Left Sidebar-->
+
+        <div class="col-lg-2 col-sm-12">
+          <form action="">
+            <div class="row mb-3">
+              <span class="input-group-text justify-content-center">
+                <div class="col-2">
+                  <i class="fa fa-map-pin" aria-hidden="true"></i>
                 </div>
-                <div class="row justify-content-center align-items-center g-2">
-                  <div class="col">
-                    <div class="mb-3">
-                      <label for="" class="form-label">Email</label>
+                <div class="d-block"><strong>Search Filter</strong></div>
+              </span>
+            </div>
+
+            <div class="accordion accordion-flush d-block">
+              <!--Filter Type-->
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#productType"
+                    aria-expanded="true"
+                    aria-controls="productType">
+                    Product Type
+                  </button>
+                </h2>
+                <div
+                  id="productType"
+                  class="accordion-collapse collapse show"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <div class="form-check">
                       <input
-                        type="email"
-                        class="form-control"
-                        name=""
-                        id=""
-                        aria-describedby="emailHelpId"
-                        placeholder="user@email.com" />
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="cropsFilter" />
+                      <label class="form-check-label" for="cropsFilter">
+                        Crops
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="equipmentFilter"
+                        checked />
+                      <label class="form-check-label" for="equipmentFilter">
+                        Equipment
+                      </label>
                     </div>
                   </div>
                 </div>
-                <div class="row justify-content-center align-items-center g-2">
-                  <div class="col">
-                    <div class="mb-3">
-                      <label for="" class="form-label">Password</label>
-                      <input
-                        type="password"
-                        class="form-control"
-                        name=""
-                        id=""
-                        placeholder="" />
-                    </div>
-                  </div>
-                </div>
-                <div class="row justify-content-center align-items-center g-0">
-                  <div class="col-sm-12 col-lg-6">
-                    <button type="submit" class="btn btn-success">
-                      Log In
-                    </button>
-                  </div>
-                  <div class="col-sm-12 col-lg-6">
-                    <button type="reset" class="btn btn-danger">
-                      Forgot Password?
-                    </button>
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <h1 class="text-center">CropTrade</h1>
-                <p>Some text about croptrade shit</p>
               </div>
             </div>
+          </form>
+        </div>
+        <!--Items-->
+        <div class="col-lg-8 col-sm-12 p-lg-5">
+          <nav class="" aria-label="...">
+            <div class="row">
+              <!--Sort-->
+              <div class="dropdown col-lg-4 btn-outline-success">
+                <button
+                  class="btn dropdown-toggle"
+                  type="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Sort By
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Lowest Price</a></li>
+                  <li><a class="dropdown-item" href="#">Highest Price</a></li>
+                  <li><a class="dropdown-item" href="#">Oldest</a></li>
+                  <li><a class="dropdown-item" href="#">Newest</a></li>
+                </ul>
+              </div>
+
+              <div
+                class="d-grid justify-content-center col-lg-4 col-sm-12 pb-lg-3 pb-sm-1">
+                <!--Pagination-->
+                <ul class="pagination justify-content-end">
+                  <li class="page-item disabled">
+                    <span class="page-link">Previous</span>
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link active" href="#">1</a>
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link" href="#">2</a>
+                  </li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item">
+                    <a class="page-link" href="#">Next</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+          <!--Cart Items-->
+          <div class="list-group p-3 p-sm-1 p-xs-1">
+            <!--Cart Item-->
+            <a
+              href="#insert link to item"
+              class="list-group-item list-group-item-action"
+              aria-current="true">
+              <div class="row">
+                <div class="col-2">
+                  <img
+                    src="./img/bg-image.jpg"
+                    class="rounded-2 m-1 img-fluid"
+                    alt="..." />
+                </div>
+                <div class="col-10">
+                  <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1 text-truncate">Item Name</h5>
+                    <small><label>Qty:</label><label id="">1</label></small>
+                  </div>
+                  <p class="mb-1 text-truncate">Item description</p>
+                  <small class="text-truncate">Seller Name</small>
+                  <div class="float-end">
+                    <h4><label>₱</label><label id="">1.00</label></h4>
+                  </div>
+                </div>
+              </div>
+            </a>
           </div>
         </div>
-      </form>
+      </div>
+      <div class="fixed-bottom bg-success">
+        <div class="row d-flex justify-content-end text-light">
+          <div class="d-flex justify-content-end col-lg-10">
+            <h3 class="">Total</h3>
+          </div>
+          <div class="d-flex justify-content-end col-lg-2">
+            <h3 class="pe-5 pe-xs-1">
+              <label>₱</label><label id="">1.00</label>
+            </h3>
+          </div>
+        </div>
+      </div>
     </main>
     <footer>
       <!-- place footer here -->

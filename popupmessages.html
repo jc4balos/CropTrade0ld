@@ -46,9 +46,11 @@
     <header>
       <!-- place navbar here -->
       <!--Header-->
-      <nav class="navbar navbar-expand-lg text-bg-light bg-opacity-25">
+      <nav class="navbar navbar-expand-lg text-bg-success">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">CropTrade</a>
+          <a class="navbar-brand" href="index.html">
+            <img class="img-fluid logosize" src="./img/logo.png" />
+          </a>
           <button
             class="navbar-toggler"
             type="button"
@@ -62,26 +64,27 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a
-                  class="nav-link active"
-                  aria-current="page"
-                  href="index.html "
+                <a class="nav-link" aria-current="page" href="./index.html"
                   >Home</a
                 >
               </li>
 
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Buy</a>
+                <a class="nav-link" aria-current="page" href="./buy.html"
+                  >Buy</a
+                >
               </li>
 
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="sell.html"
+                <a class="nav-link" aria-current="page" href="./sell.html"
                   >Sell</a
                 >
               </li>
 
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Rent</a>
+                <a class="nav-link" aria-current="page" href="./rent.html"
+                  >Rent</a
+                >
               </li>
 
               <li class="nav-item dropdown">
@@ -94,8 +97,14 @@
                   User
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Account</a></li>
-                  <li><a class="dropdown-item" href="#">Transactions</a></li>
+                  <li>
+                    <a class="dropdown-item" href="./account.html">Account</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./transactions.html"
+                      >Transactions</a
+                    >
+                  </li>
                   <li><hr class="dropdown-divider" /></li>
                   <li>
                     <a class="dropdown-item" href="./login.html">Login</a>
@@ -116,6 +125,14 @@
                 Search
               </button>
             </form>
+            <!--Account button-->
+            <a href="./account.html">
+              <img
+                src="./img/no-photo.jpg"
+                class="rounded-5 m-2 d-none d-sm-none d-lg-block"
+                alt="..."
+                style="width: 3vw" />
+            </a>
           </div>
         </div>
       </nav>

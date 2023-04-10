@@ -47,7 +47,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
 
     <!--External CSS-->
-    <link rel="stylesheet" href="./logo.css" />
+    <link rel="stylesheet" href="./global.css" />
   </head>
 
   <body
@@ -73,24 +73,27 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link" aria-current="page" href="./index.html"
+                  >Home</a
+                >
               </li>
 
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Buy</a>
+                <a class="nav-link" aria-current="page" href="./buy.html"
+                  >Buy</a
+                >
               </li>
 
               <li class="nav-item">
-                <a
-                  class="nav-link active"
-                  aria-current="page"
-                  href="./sell.html"
+                <a class="nav-link" aria-current="page" href="./sell.html"
                   >Sell</a
                 >
               </li>
 
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Rent</a>
+                <a class="nav-link" aria-current="page" href="./rent.html"
+                  >Rent</a
+                >
               </li>
 
               <li class="nav-item dropdown">
@@ -103,8 +106,14 @@
                   User
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Account</a></li>
-                  <li><a class="dropdown-item" href="#">Transactions</a></li>
+                  <li>
+                    <a class="dropdown-item" href="./account.html">Account</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="transactions.html"
+                      >Transactions</a
+                    >
+                  </li>
                   <li><hr class="dropdown-divider" /></li>
                   <li>
                     <a class="dropdown-item" href="./login.html">Login</a>
@@ -125,6 +134,14 @@
                 Search
               </button>
             </form>
+            <!--Account button-->
+            <a href="./account.html">
+              <img
+                src="./img/no-photo.jpg"
+                class="rounded-5 m-2 d-none d-sm-none d-lg-block"
+                alt="..."
+                style="width: 3vw" />
+            </a>
           </div>
         </div>
       </nav>
@@ -135,8 +152,8 @@
           class="d-flex align-items-center justify-content-center m-lg-5 m-sm-1"
           style="color: white">
           <div class="container bg-dark bg-opacity-50 rounded p-lg-5 p-sm-1">
-            <div class="row justify-content-center align-items-center g-2">
-              <div class="col-sm-12 col-lg-6">
+            <div class="row justify-content-center g-2">
+              <div class="col-sm-12 col-lg-6 p-lg-3 p-xs-1">
                 <div class="row justify-content-center align-items-center g-2">
                   <div class="col">
                     <h3 class="text-center">Sign Up</h3>
@@ -181,11 +198,10 @@
                   </div>
                   <div class="col-sm-12 col-lg-6">
                     <label for="" class="form-label">Sex</label>
-                    <select class="form-select form-select-lg" name="" id="">
+                    <select class="form-select form-select-md" name="" id="">
                       <option selected>Select Sex</option>
                       <option value="">Male</option>
                       <option value="">Female</option>
-                      <option value="">3x a day</option>
                     </select>
                   </div>
                   <div class="col-sm-12 col-lg-6">
@@ -218,21 +234,21 @@
                   class="row justify-content-center align-items-center g-2 mt-5">
                   <div class="col-sm-12 col-lg-6">
                     <label for="" class="form-label">Province</label>
-                    <select class="form-select form-select-lg" name="" id="">
+                    <select class="form-select form-select-md" name="" id="">
                       <!--Fetch this address options from database-->
                       <option selected>Select Province</option>
                     </select>
                   </div>
                   <div class="col-sm-12 col-lg-6">
                     <label for="" class="form-label">City</label>
-                    <select class="form-select form-select-lg" name="" id="">
+                    <select class="form-select form-select-md" name="" id="">
                       <!--Fetch this address options from database-->
                       <option selected>Select City</option>
                     </select>
                   </div>
                   <div class="col-sm-12 col-lg-6">
                     <label for="" class="form-label">Baranggay</label>
-                    <select class="form-select form-select-lg" name="" id="">
+                    <select class="form-select form-select-md" name="" id="">
                       <!--Fetch this address options from database-->
                       <option selected>Select Baranggay</option>
                     </select>
@@ -317,9 +333,9 @@
                   </div>
                 </div>
               </div>
-              <div class="col-sm-12 col-lg-6">
+              <div class="col-sm-12 col-lg-6 p-lg-3 p-xs-1">
                 <h1 class="text-center">CropTrade</h1>
-                <p>Some text about croptrade shit</p>
+                <p>Croptrade helps the people [insert objectives]</p>
               </div>
             </div>
           </div>
