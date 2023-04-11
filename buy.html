@@ -47,7 +47,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
 
     <!--External CSS-->
-    <link rel="stylesheet" href="./logo.css" />
+    <link rel="stylesheet" href="./global.css" />
   </head>
 
   <body>
@@ -145,11 +145,11 @@
         </div>
       </nav>
     </header>
-    <main class="mt-3">
+    <main class="p-3">
       <div class="row">
         <!--Left Sidebar-->
 
-        <div class="col-lg-2 col-sm-12 m-1">
+        <div class="col-lg-2 col-sm-12">
           <form action="">
             <div class="row mb-3">
               <span class="input-group-text justify-content-center">
@@ -160,7 +160,7 @@
               </span>
             </div>
 
-            <div class="accordion accordion-flush">
+            <div class="accordion accordion-flush d-block">
               <!--Filter Type-->
               <div class="accordion-item">
                 <h2 class="accordion-header">
@@ -168,16 +168,13 @@
                     class="accordion-button"
                     type="button"
                     data-bs-toggle="collapse"
-                    data-bs-target="#collapseOne"
+                    data-bs-target="#productType"
                     aria-expanded="true"
-                    aria-controls="collapseOne">
+                    aria-controls="productType">
                     Product Type
                   </button>
                 </h2>
-                <div
-                  id="collapseOne"
-                  class="accordion-collapse collapse show"
-                  data-bs-parent="#accordionExample">
+                <div id="productType" class="accordion-collapse collapse show">
                   <div class="accordion-body">
                     <div class="form-check">
                       <input
@@ -198,6 +195,33 @@
                         checked />
                       <label class="form-check-label" for="equipmentFilter">
                         Equipment
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#location"
+                    aria-expanded="true"
+                    aria-controls="location">
+                    Location
+                  </button>
+                </h2>
+                <div id="location" class="accordion-collapse collapse show">
+                  <div class="accordion-body">
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="cropsFilter" />
+                      <label class="form-check-label" for="cropsFilter">
+                        Manila
                       </label>
                     </div>
                   </div>
